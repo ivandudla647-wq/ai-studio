@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="age-gate">
+    <h1>18+ Warning</h1>
+    <p>This website contains AI-generated adult content. All characters are fictional.</p>
+    <button onclick="acceptAge()">I am 18+</button>
+  </div>
+
+  <div id="studio" style="display:none;">
+    <h1>AI Studio</h1>
+    <button onclick="generate()">Generate AI Image</button>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
