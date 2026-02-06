@@ -1,0 +1,23 @@
+body {
+  background:black;
+  color:white;
+  text-align:center;
+  font-family:sans-serif;
+  padding:30px;
+}
+
+button {
+  background:#ff2d95;
+  border:none;
+  padding:12px 20px;
+  border-radius:12px;
+  color:white;
+  font-size:16px;
+}
+
+img {
+  max-width:90%;
+  margin-top:20px;
+  border-radius:12px;
+  filter: blur(6px);
+}
