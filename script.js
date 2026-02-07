@@ -6,10 +6,27 @@ function enter() {
 }
 
 async function generate() {
-  if (used) {
-    alert("Free limit reached");
-    return;
-  }
+  const result = document.getElementById("result");
+  result.innerHTML = "Generating...";
+
+  const start = await fetch("/api/start");
+  const { id } = await start.json();
+
+  const interval = setInterval(async () => {
+    const r = await fetch(`/api/check?id=${id}`);
+    const data = await r.json();
+
+    if (data.image) {
+      clearInterval(interval);
+      result.innerHTML = `
+        <div class="blur">
+          <img src="${data.image}" />
+        </div>
+        <button class="unlock">Unlock HD</button>
+      `;
+    }
+  }, 3000);
+}
 
   used = true;
 
