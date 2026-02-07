@@ -24,7 +24,9 @@ async function generate() {
       <div class="blur">
         <img src="${data.image}" />
       </div>
-      <button class="unlock">Unlock HD</button>
+      <button class="unlock" onclick="window.location.href='https://ivandudla.lemonsqueezy.com/checkout/buy/4a79d1e4-214a-4cd3-93ac-658a881afadc'">
+  Unlock HD
+</button>
     `;
   } else {
     result.innerHTML = "Error";
