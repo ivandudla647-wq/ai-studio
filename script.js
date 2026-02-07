@@ -1,10 +1,3 @@
-let used = false;
-
-function enter() {
-  document.getElementById("age").style.display = "none";
-  document.getElementById("app").style.display = "block";
-}
-
 async function generate() {
   const result = document.getElementById("result");
   result.innerHTML = "Generating...";
