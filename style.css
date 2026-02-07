@@ -1,23 +1,31 @@
 body {
-  background:black;
-  color:white;
-  text-align:center;
-  font-family:sans-serif;
-  padding:30px;
+  background: #0f0f0f;
+  color: white;
+  font-family: -apple-system, Arial;
+  text-align: center;
+  padding: 30px;
 }
 
 button {
-  background:#ff2d95;
-  border:none;
-  padding:12px 20px;
-  border-radius:12px;
-  color:white;
-  font-size:16px;
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+  background: #ff2d55;
+  color: white;
+  margin-top: 20px;
 }
 
-img {
-  max-width:90%;
-  margin-top:20px;
-  border-radius:12px;
-  filter: blur(6px);
+.blur img {
+  width: 100%;
+  filter: blur(18px);
+}
+
+.unlock {
+  background: #00c853;
+}
+
+.loader {
+  font-size: 20px;
+  opacity: 0.8;
 }
